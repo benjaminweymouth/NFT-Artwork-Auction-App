@@ -5,3 +5,7 @@ body {
   h1 {
     color: green;
   }
+
+  .imgborder {
+    border: 5px solid rgba(95, 14, 105, 0.932);
+  }
