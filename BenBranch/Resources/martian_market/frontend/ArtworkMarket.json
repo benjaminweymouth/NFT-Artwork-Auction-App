@@ -411,7 +411,7 @@
 				"type": "string"
 			}
 		],
-		"name": "registerLand",
+		"name": "registerArt",
 		"outputs": [],
 		"payable": true,
 		"stateMutability": "payable",

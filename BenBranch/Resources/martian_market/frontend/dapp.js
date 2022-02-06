@@ -1,6 +1,6 @@
-// @TODO: Update this address to match your deployed MartianMarket contract!
+// @TODO: Update this address to match your deployed ArtworkMarket contract!
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0xaAb5306BFcCa82D2601653e7CEB62f02Dac4d646";
+const contractAddress = "0x644b3b39caaC4f3a04732c77e88Dc414F10dFa43";
 
 
 const dApp = {
@@ -16,28 +16,28 @@ const dApp = {
   collectVars: async function() {
     // get land tokens
     this.tokens = [];
-    this.totalSupply = await this.marsContract.methods.totalSupply().call();
+    this.totalSupply = await this.artContract.methods.totalSupply().call();
 
     // fetch json metadata from IPFS (name, description, image, etc)
     const fetchMetadata = (reference_uri) => fetch(`https://gateway.pinata.cloud/ipfs/${reference_uri.replace("ipfs://", "")}`, { mode: "cors" }).then((resp) => resp.json());
 
     for (let i = 1; i <= this.totalSupply; i++) {
       try {
-        const token_uri = await this.marsContract.methods.tokenURI(i).call();
+        const token_uri = await this.artContract.methods.tokenURI(i).call();
         console.log('token uri', token_uri)
         const token_json = await fetchMetadata(token_uri);
         console.log('token json', token_json)
         this.tokens.push({
           tokenId: i,
-          highestBid: Number(await this.marsContract.methods.highestBid(i).call()),
-          auctionEnded: Boolean(await this.marsContract.methods.auctionEnded(i).call()),
-          pendingReturn: Number(await this.marsContract.methods.pendingReturn(i, this.accounts[0]).call()),
+          highestBid: Number(await this.artContract.methods.highestBid(i).call()),
+          auctionEnded: Boolean(await this.artContract.methods.auctionEnded(i).call()),
+          pendingReturn: Number(await this.artContract.methods.pendingReturn(i, this.accounts[0]).call()),
           auction: new window.web3.eth.Contract(
             this.auctionJson,
-            await this.marsContract.methods.auctions(i).call(),
+            await this.artContract.methods.auctions(i).call(),
             { defaultAccount: this.accounts[0] }
           ),
-          owner: await this.marsContract.methods.ownerOf(i).call(),
+          owner: await this.artContract.methods.ownerOf(i).call(),
           ...token_json
         });
       } catch (e) {
@@ -94,14 +94,14 @@ const dApp = {
   bid: async function(event) {
     const tokenId = $(event.target).attr("token-id");
     const wei = Number($(event.target).prev().val());
-    await this.marsContract.methods.bid(tokenId).send({from: this.accounts[0], value: wei}).on("receipt", async (receipt) => {
+    await this.artContract.methods.bid(tokenId).send({from: this.accounts[0], value: wei}).on("receipt", async (receipt) => {
       M.toast({ html: "Transaction Mined! Refreshing UI..." });
       await this.updateUI();
     });
   },
   endAuction: async function(event) {
     const tokenId = $(event.target).attr("token-id");
-    await this.marsContract.methods.endAuction(tokenId).send({from: this.accounts[0]}).on("receipt", async (receipt) => {
+    await this.artContract.methods.endAuction(tokenId).send({from: this.accounts[0]}).on("receipt", async (receipt) => {
       M.toast({ html: "Transaction Mined! Refreshing UI..." });
       await this.updateUI();
     });
@@ -113,7 +113,7 @@ const dApp = {
       await this.updateUI();
     });
   },
-  registerLand: async function() {
+  registerArt: async function() {
     const name = $("#dapp-register-name").val();
     const image = document.querySelector('input[type="file"]');
 
@@ -169,7 +169,7 @@ const dApp = {
       M.toast({ html: `Success. Reference URI located at ${reference_uri}.` });
       M.toast({ html: "Sending to blockchain..." });
 
-      await this.marsContract.methods.registerLand(reference_uri).send({from: this.accounts[0]}).on("receipt", async (receipt) => {
+      await this.artContract.methods.registerArt(reference_uri).send({from: this.accounts[0]}).on("receipt", async (receipt) => {
         M.toast({ html: "Transaction Mined! Refreshing UI..." });
         $("#dapp-register-name").val("");
         $("#dapp-register-image").val("");
@@ -189,17 +189,17 @@ const dApp = {
     this.accounts = await window.web3.eth.getAccounts();
     this.contractAddress = contractAddress;
 
-    this.marsJson = await (await fetch("./MartianMarket.json")).json();
-    this.auctionJson = await (await fetch("./MartianAuction.json")).json();
+    this.artJson = await (await fetch("./ArtworkMarket.json")).json();
+    this.auctionJson = await (await fetch("./ArtworkAuction.json")).json();
 
-    this.marsContract = new window.web3.eth.Contract(
-      this.marsJson,
+    this.artContract = new window.web3.eth.Contract(
+      this.artJson,
       this.contractAddress,
       { defaultAccount: this.accounts[0] }
     );
-    console.log("Contract object", this.marsContract);
+    console.log("Contract object", this.artContract);
 
-    this.isAdmin = this.accounts[0] == await this.marsContract.methods.owner().call();
+    this.isAdmin = this.accounts[0] == await this.artContract.methods.owner().call();
 
     await this.updateUI();
   }
