@@ -1,6 +1,6 @@
 // @TODO: Update this address to match your deployed ArtworkMarket contract!
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0x644b3b39caaC4f3a04732c77e88Dc414F10dFa43";
+const contractAddress = "0xC18897E17f2496e167C3E0b153111644C23cfc6e";
 
 
 const dApp = {
@@ -59,13 +59,20 @@ const dApp = {
     console.log("updating UI");
     // refresh variables
     await this.collectVars();
-
+ 
     $("#dapp-tokens").html("");
     this.tokens.forEach((token) => {
       try {
         let endAuction = `<a token-id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
+        let highestBidder = `Highest Bidder: ${token.highestBidder}`;
+        let highestBid = `  ${token.highestBid}`;
+        let auctionStatus = `auctionStatus : ${token.auctionStatus}`;
+        console.log('highestBidder', highestBidder)
+        
+         
         let bid = `<a token-id="${token.tokenId}" href="#" onclick="dApp.bid(event);">Bid</a>`;
         let owner = `Final Artwork Owner: ${token.owner}`;
+        console.log('owner', owner)
         let withdraw = `<a token-id="${token.tokenId}" href="#" onclick="dApp.withdraw(event)">Withdraw</a>`
         let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
           $("#dapp-tokens").append(
@@ -77,12 +84,39 @@ const dApp = {
                 </div>
                 <div class="card-action">
                   <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid + 1}" ${token.auctionEnded ? 'disabled' : ''}>
+                  <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid }" ${token.auctionEnded ? 'disabled' : ''}>
                   ${token.auctionEnded ? owner : bid}
                   ${token.pendingReturn > 0 ? withdraw : ''}
                   ${token.pendingReturn > 0 ? pendingWithdraw : ''}
                   ${this.isAdmin && !token.auctionEnded ? endAuction : ''}
                 </div>
               </div>
+            </div>`
+          );
+
+          $("#dapp-auc-details").append(
+            `    <div class="card blue darken-">
+            <div class="card-content white-text">
+              <div class="well">
+                  <div>
+                      <legend class="btn btn-secondary float-left">Auction Details</legend>
+                  </div>
+                  <div>
+                      <ul id='transfers'>
+             <p class=" text-left">Auction End: </p> <text id="auction_end"></text> 
+            <li><label class="lead white-text float-left">Auction Highest Bid: ${token.auctionEnded ? highestBid : null} </label> <text id="HighestBid"></text></li>
+            <li><label class="lead white-text float-left">My Bid: </label> <text id="MyBid"></text></li>
+            <li><label class="lead white-text float-left">Auction Highest Bider: </label> <text id="HighestBidder"></text></li>
+            <li><label class="lead white-text float-left">Auction Status: </label> <text id="STATE"></text></li>					
+            </ul>
+                        </div>							 					 				  
+                  <div>
+              </div>   
+             </div>   
+            </div> 
+              <div class="card">
+              
+              
             </div>`
           );
       } catch (e) {
