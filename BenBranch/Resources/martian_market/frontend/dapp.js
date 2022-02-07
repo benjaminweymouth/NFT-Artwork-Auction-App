@@ -26,6 +26,7 @@ const dApp = {
     for (let i = 1; i <= this.totalSupply; i++) {
       try {
         const token_uri = await this.artContract.methods.tokenURI(i).call();
+        const art_name = await this.artContract.methods.tokenURI(i).call();
         console.log('token uri', token_uri)
         const token_json = await fetchMetadata(token_uri);
         console.log('token json', token_json)
@@ -63,17 +64,18 @@ const dApp = {
     $("#dapp-tokens").html("");
     this.tokens.forEach((token) => {
       try {
-        let endAuction = `<a token-id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
-        let highestBidder = `Highest Bidder: ${token.highestBidder}`;
+        let endAuction = `<a token-id="${token.tokenId}" class="dapp-admin btn btn-info" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
+        let highestBidder = `: ${token.owner}`;
         let highestBid = `  ${token.highestBid}`;
-        let auctionStatus = `auctionStatus : ${token.auctionStatus}`;
-        console.log('highestBidder', highestBidder)
+        let auctionStatus = `   ${token.auctionEnded}`;
+        
         
          
-        let bid = `<a token-id="${token.tokenId}" href="#" onclick="dApp.bid(event);">Bid</a>`;
+        let bid = `<a token-id="${token.tokenId}" href="#" class="btn btn-info" onclick="dApp.bid(event);">Bid</a>`;
         let owner = `Final Artwork Owner: ${token.owner}`;
-        console.log('owner', owner)
-        let withdraw = `<a token-id="${token.tokenId}" href="#" onclick="dApp.withdraw(event)">Withdraw</a>`
+        let URL = `Final Artwork Owner: ${token.URL}`;
+        /* console.log('owner', owner) */
+        let withdraw = `<a token-id="${token.tokenId}" href="#" class="btn btn-info" onclick="dApp.withdraw(event)">Withdraw</a>`
         let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
           $("#dapp-tokens").append(
             `<div class="col m6">
@@ -93,31 +95,41 @@ const dApp = {
               </div>
             </div>`
           );
+          // console.log('i one per image', i)
+    /*     console.log('highestBidder', highestBidder)
+        console.log('highestBid', highestBid)
+        console.log('auctionStatus', auctionStatus)
+        console.log('owner', owner) */
 
           $("#dapp-auc-details").append(
             `    <div class="card blue darken-">
             <div class="card-content white-text">
               <div class="well">
                   <div>
-                      <legend class="btn btn-secondary float-left">Auction Details</legend>
+                  <h5 class="card-header bg-light text-dark mb-3">AUCTION DETAILS FOR:  ${token.name}</h5>
+                       
                   </div>
                   <div>
                       <ul id='transfers'>
-             <p class=" text-left">Auction End: </p> <text id="auction_end"></text> 
-            <li><label class="lead white-text float-left">Auction Highest Bid: ${token.auctionEnded ? highestBid : null} </label> <text id="HighestBid"></text></li>
-            <li><label class="lead white-text float-left">My Bid: </label> <text id="MyBid"></text></li>
-            <li><label class="lead white-text float-left">Auction Highest Bider: </label> <text id="HighestBidder"></text></li>
-            <li><label class="lead white-text float-left">Auction Status: </label> <text id="STATE"></text></li>					
+             <p class=" text-left">  </p> <text id="auction_end"></text> 
+            <li><label class="lead white-text float-left">Auction Highest Bid: ${ highestBid} wei </label> <text id="HighestBid"></text></li>
+            <li><label class="lead white-text float-left">Auction Highest Bidder: ${ highestBidder }</label> <text id="HighestBidder"></text></li>
+            <li><label class="lead white-text float-left">Auction Ended? ${ auctionStatus}</label> <text id="STATE"></text></li>
+            <li><label class="lead white-text float-left">
+            Image Pinata IPFS URI:   
+            <a class="white-text" href="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} ">
+            https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} 
+            </a>
+            
+            </label> <text id="STATE"></text></li>
+            					
             </ul>
                         </div>							 					 				  
                   <div>
               </div>   
              </div>   
             </div> 
-              <div class="card">
-              
-              
-            </div>`
+               `
           );
       } catch (e) {
         alert(JSON.stringify(e));

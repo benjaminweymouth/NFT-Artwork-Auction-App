@@ -9,3 +9,12 @@ body {
   .imgborder {
     border: 5px solid rgba(95, 14, 105, 0.932);
   }
+
+  .customercomments {
+    padding-left: 5px;
+  }
+
+  .fontgruppo {
+    font-family:'Trebuchet MS';font-size: 22px;
+   }
+   
