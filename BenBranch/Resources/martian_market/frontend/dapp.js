@@ -13,6 +13,8 @@ const dApp = {
     }
     return false;
   },
+
+  //async function enable asynchronous, promise-based behavior to be written in a cleaner style
   collectVars: async function() {
     // get land tokens
     this.tokens = [];
@@ -63,7 +65,7 @@ const dApp = {
       try {
         let endAuction = `<a token-id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
         let bid = `<a token-id="${token.tokenId}" href="#" onclick="dApp.bid(event);">Bid</a>`;
-        let owner = `Owner: ${token.owner}`;
+        let owner = `Final Artwork Owner: ${token.owner}`;
         let withdraw = `<a token-id="${token.tokenId}" href="#" onclick="dApp.withdraw(event)">Withdraw</a>`
         let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
           $("#dapp-tokens").append(
@@ -147,6 +149,7 @@ const dApp = {
       M.toast({ html: `Success. Image located at ${image_uri}.` });
       M.toast({ html: "Uploading JSON..." });
 
+      
       const reference_json = JSON.stringify({
         pinataContent: { name, image: image_uri },
         pinataOptions: {cidVersion: 1}
