@@ -17,4 +17,9 @@ body {
   .fontgruppo {
     font-family:'Trebuchet MS';font-size: 22px;
    }
-   
+  
+   .card2 {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}

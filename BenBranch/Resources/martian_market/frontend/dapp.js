@@ -102,33 +102,51 @@ const dApp = {
         console.log('owner', owner) */
 
           $("#dapp-auc-details").append(
-            `    <div class="card blue darken-">
-            <div class="card-content white-text">
-              <div class="well">
-                  <div>
-                  <h5 class="card-header bg-light text-dark mb-3">AUCTION DETAILS FOR:  ${token.name}</h5>
-                       
-                  </div>
-                  <div>
-                      <ul id='transfers'>
-             <p class=" text-left">  </p> <text id="auction_end"></text> 
-            <li><label class="lead white-text float-left">Auction Highest Bid: ${ highestBid} wei </label> <text id="HighestBid"></text></li>
-            <li><label class="lead white-text float-left">Auction Highest Bidder: ${ highestBidder }</label> <text id="HighestBidder"></text></li>
-            <li><label class="lead white-text float-left">Auction Ended? ${ auctionStatus}</label> <text id="STATE"></text></li>
-            <li><label class="lead white-text float-left">
-            Image Pinata IPFS URI:   
-            <a class="white-text" href="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} ">
+            `    <div class="card blue darken- ">
+            <div class="card-content white-text ">
+          
+           
+
+   <p class="card-header white-text bg-light text-dark mb-3 "> AUCTION DETAILS FOR:  ${token.name}</p>          
+  <table class="table ">
+  <thead>
+    <tr>
+       
+       
+       
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Auction Highest Bid: ${highestBid} wei </td>
+       
+       
+    </tr>
+    <tr>
+      <td>Auction Highest Bidder: ${ highestBidder }</td>
+       
+       
+    </tr>
+    <tr>
+      <td>Auction Ended? ${ auctionStatus}</td>
+       
+       
+    </tr>
+      <tr>
+      <td> Image Pinata IPFS URI: 
+      <a class="white-text h1 small" style=font-size:8px, href="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} ">
             https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} 
             </a>
-            
-            </label> <text id="STATE"></text></li>
-            					
-            </ul>
-                        </div>							 					 				  
-                  <div>
-              </div>   
-             </div>   
-            </div> 
+      
+      </td>
+       
+       
+    </tr>
+  </tbody>
+</table>
+</div>   
+</div> 
+
                `
           );
       } catch (e) {
