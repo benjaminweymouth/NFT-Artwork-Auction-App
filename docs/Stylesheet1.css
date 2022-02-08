@@ -1,0 +1,42 @@
+body {
+    color: blue;
+  }
+  
+  h1 {
+    color: green;
+  }
+
+  .imgborder {
+    border: 5px solid rgba(95, 14, 105, 0.932);
+  }
+
+  .customercomments {
+    padding-left: 5px;
+  }
+
+  .fontgruppo {
+    font-family:'Trebuchet MS';font-size: 22px;
+   }
+  
+   .card2 {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.centertext {
+
+  text-align: center;
+  
+  }
+
+  .resizeimg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cardsize
+  {
+    width: 30rem;
+    height: 50rem;
+  }
