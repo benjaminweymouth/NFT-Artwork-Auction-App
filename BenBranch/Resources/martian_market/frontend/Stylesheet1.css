@@ -23,3 +23,9 @@ body {
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
 }
+
+.centertext {
+
+  text-align: center;
+  
+  }
