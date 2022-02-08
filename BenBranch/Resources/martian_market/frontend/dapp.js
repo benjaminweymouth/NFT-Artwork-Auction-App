@@ -85,6 +85,7 @@ const dApp = {
                   <span id="dapp-name" class="card-title">${token.name}</span>
                 </div>
                 <div class="card-action">
+                  <h6> List of Bids </h6>
                   <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid + 1}" ${token.auctionEnded ? 'disabled' : ''}>
                   <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid }" ${token.auctionEnded ? 'disabled' : ''}>
                   ${token.auctionEnded ? owner : bid}
