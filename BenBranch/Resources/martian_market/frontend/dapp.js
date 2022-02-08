@@ -86,12 +86,12 @@ const dApp = {
                   <span id="dapp-name" class="card-title">${token.name}</span>
                 </div>
                 <div class="card-action">
-                <h6> Enter bid here: </h6>
+                <h6> Bid: </h6>
                   <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid + 1}" ${token.auctionEnded ? 'disabled' : ''}>
                   ${token.auctionEnded ? owner : bid}
                   ${token.pendingReturn > 0 ? withdraw : ''}
+                  ${this.isAdmin && !token.auctionEnded ? endAuction : ''} <br>
                   ${token.pendingReturn > 0 ? pendingWithdraw : ''}
-                  ${this.isAdmin && !token.auctionEnded ? endAuction : ''}
                 </div>
               </div>
             </div>`
