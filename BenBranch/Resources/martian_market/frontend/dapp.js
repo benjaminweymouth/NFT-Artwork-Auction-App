@@ -1,6 +1,6 @@
 // @TODO: Update this address to match your deployed ArtworkMarket contract!
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0xC18897E17f2496e167C3E0b153111644C23cfc6e";
+const contractAddress = "0x40ee120279d793c6BbD80De2Ed833108B5d974B8";
 
 
 const dApp = {
@@ -77,17 +77,20 @@ const dApp = {
         /* console.log('owner', owner) */
         let withdraw = `<a token-id="${token.tokenId}" href="#" class="btn btn-info" onclick="dApp.withdraw(event)">Withdraw</a>`
         let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
+      
+
           $("#dapp-tokens").append(
-            `<div class="col m6">
-              <div class="card">
+            `<div class="col m3">
+              <div class="card cardsize">
                 <div class="card-image">
-                  <img id="dapp-image" src="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")}">
+
+                
+                  <img id="dapp-image"   src="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")}">
                   <span id="dapp-name" class="card-title">${token.name}</span>
                 </div>
                 <div class="card-action">
-                  <h6> List of Bids </h6>
+                <h6> Make your offer here:  </h6>
                   <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid + 1}" ${token.auctionEnded ? 'disabled' : ''}>
-                  <input type="number" min="${token.highestBid + 1}" name="dapp-wei" value="${token.highestBid }" ${token.auctionEnded ? 'disabled' : ''}>
                   ${token.auctionEnded ? owner : bid}
                   ${token.pendingReturn > 0 ? withdraw : ''}
                   ${token.pendingReturn > 0 ? pendingWithdraw : ''}
