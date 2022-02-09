@@ -29,12 +29,12 @@ At this stage you can register some artwork on the website. And it will be hoste
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
 ## Software Tools / Items to Install: 
-1) Remix IDE
-2) Ganache  
-3) Metamask Chrome Extension
-4) Web Browser (Chrome) 
-5) VS Code IDE
-6) Live Server (VS Code extension) 
+1) Remix IDE https://github.com/ethereum/remix-ide
+2) Ganache   https://trufflesuite.com/ganache/
+3) Metamask Chrome Extension https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+4) Web Browser (Chrome)  https://www.google.ca/chrome/
+5) VS Code IDE  https://code.visualstudio.com/
+6) Live Server (VS Code extension) https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 
 ## Steps to Setup the App: 
