@@ -1,8 +1,27 @@
+
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/frontend/images/AuctionPierLogo.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
 ## AuctionPIER: Dapp Auction, A Decentralized Auction Project 
-The purpose of this project is to create a decentralized auction in Solidity, using React for the Front End. 
+The purpose of this project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
 This project has two different solidity files for the back end / decentralized portion of the app. 
 
-## Steps: 
+## Executive Summary and Purpose
+
+## Compiling and Deploying the App: (Video) 
+
+This video shows the steps to compile and deploy the solidity contracts 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/1.%20Compiling%20and%20Deployment.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Start the App in VS Code: (Video) 
+
+Once you have VS Code "Live Server" extension installed, you can run the app on your local machine. This video shows the steps required. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/2.%20Open%20Live%20Server.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+
+## Steps to Setup the App: 
 
 1) open ganache. open metamask and connect metamask to ganache network 
 2) set metamask web injector
