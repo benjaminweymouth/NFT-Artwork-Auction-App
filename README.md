@@ -64,6 +64,24 @@ At this stage you can register some artwork on the website. And it will be hoste
 
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
+## Non-deployer Access: (Video) 
+
+This video shows the view for a non-deployer/non-admin . 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/4.%20Non-deployer%20access.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Placing a bid: (Video) 
+
+The following video depicts how a potential bidder can make and submit a bid. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/5.%20Placing%20a%20bid.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Auction End: (Video) 
+
+The auction owner can end the auction for any piece of artwork when the highest bid is placed. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/6.%20Ending%20an%20Auction.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
 ## Software Tools / Items to Install: 
 
 Please install all of these items and select the distribution that will work with your personal computing setup. 
