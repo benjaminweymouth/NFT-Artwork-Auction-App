@@ -2,8 +2,8 @@
 
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/frontend/images/AuctionPierLogo.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
-## AuctionPIER: Dapp Auction, A Decentralized Auction Project 
-The purpose of this project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
+## AuctionPIER:  An Ethereum Dapp Auction 
+The purpose of this AuctionPIER project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
 This project has two different solidity files for the back end / decentralized portion of the app. 
 
 ## Executive Summary and Purpose
