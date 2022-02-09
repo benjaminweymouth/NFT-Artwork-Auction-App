@@ -16,6 +16,12 @@ Our motivation is to build and develop a blockchain based Auction Artwork market
 
 This project utilizes the blockchain and the idea of an non-fungible token to create a fresh new approach to auctioning off artwork. Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm. 
 
+### PowerPoint / Slide Deck 
+
+
+
+
+[![Download SlideDeck Here](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/SlideDeck/AuctionPIERSlidedeck.pptx)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
 ## Relevance to Fintech 
 
