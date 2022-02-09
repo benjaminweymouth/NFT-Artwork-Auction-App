@@ -19,26 +19,10 @@ This project utilizes the blockchain and the idea of an non-fungible token to cr
 
 ## Project Tech Stack
 
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="CSS" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="150" height="150"/>  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111055-2fb55ea2-2a7f-4403-9b29-b6e698098ce1.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111182-9364fabd-ea72-4f1f-a9e1-ea79505b2b09.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111306-45bb7f00-8db3-45bd-9091-1ac4042a3330.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111363-a70dc32a-c155-4ad4-97c4-c900f20c35c8.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111500-4c1531fd-0e1f-43f6-b31a-81f02f5a1ed9.png" alt="Git" width="150" height="150"/> 
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="CSS" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="150" height="150"/>  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111055-2fb55ea2-2a7f-4403-9b29-b6e698098ce1.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111182-9364fabd-ea72-4f1f-a9e1-ea79505b2b09.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111306-45bb7f00-8db3-45bd-9091-1ac4042a3330.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111363-a70dc32a-c155-4ad4-97c4-c900f20c35c8.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111596-a780afb7-f00d-4ccd-b107-9e0a83ba4546.png" alt="Git" width="150" height="150"/> 
 
  
-
-
-  
-
-
-
-
-
  
-
- 
-
-
-
-
- 
-
 ## Usage and Installation Instructions
 
 This section outlines GIF vidoes and details a list of instructions and tools to setup the app. The main components such as a Ganache test net, a Remix IDE and a MetaMask wallet are all crucial components to setting up the app on your machine. Links are provided for installation guides for all of these components. 
