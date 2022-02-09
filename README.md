@@ -6,7 +6,7 @@
 The purpose of this AuctionPIER project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
 This project has two different solidity files for the back end / decentralized portion of the app. 
 
-## Executive Summary and Purpose
+## Project Overview
 
 ## Explain how this project relates to fintech.
 
