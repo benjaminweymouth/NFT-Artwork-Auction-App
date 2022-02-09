@@ -6,9 +6,13 @@
 The purpose of this AuctionPIER project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
 This project has two different solidity files for the back end / decentralized portion of the app. 
 
+### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
+-----------------------------
+
+
 ## Project Overview
 
-Art houses like OpenSea and other NFT sites can no longer be ignored both from a financial impact, the revolutionary nature of NFTs and the revenue that rivals traditional auction houses like Christies. 
+Our motivation is to build and develop a blockchain based Auction Artwork marketplace using the decentralized Ethereum platform. Art houses like OpenSea and other NFT sites can no longer be ignored both from a financial impact, the revolutionary nature of NFTs and the revenue that rivals traditional auction houses like Christies. 
 
 This project utilizes the blockchain and the idea of an non-fungible token to create a fresh new approach to auctioning off artwork. Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm. 
 
