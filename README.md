@@ -15,6 +15,8 @@ This project utilizes the blockchain and the idea of an non-fungible token to cr
 
 ## Explain how this project relates to fintech.
 
+<a data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/bc11df8740283569733b67044d83f0"></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+
 ## Usage and Installation Instructions
 
 This section outlines GIF vidoes and details a list of instructions and tools to setup the app. The main components such as a Ganache test net, a Remix IDE and a MetaMask wallet are all crucial components to setting up the app on your machine. Links are provided for installation guides for all of these components. 
