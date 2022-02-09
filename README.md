@@ -25,13 +25,13 @@ Ethereum is a blockchain platform, and as such is a shared, immutable ledger tha
 
 Smart Contracts and Solidity: 
 
-Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. 
+Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. ...
 
 Auctions and Dapp Auctions: 
 
 An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
 
-Dapp Auctions are 
+Dapp Auctions are ...
  
 
 ## Project Tech Stack
