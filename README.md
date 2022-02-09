@@ -23,11 +23,11 @@ This project utilizes the blockchain and the idea of an non-fungible token to cr
 
 Ethereum is a blockchain platform, and as such is a shared, immutable ledger that simplifies recording transactions and tracking assets in a peer to peer network. In traditional apps the backend or database data is hosted on a server or static data structure like a server. An ethereum blockchain does store data, but utilizes a distributed system where each member node is not solely responsible for hosting the entire infrastructure. Blockchain technology is built specifically for recording transactions and would make it easier for companies to track things like auction purchases, Artwork ID numbers and utilizes tokens which assist in facilitating our project goals. 
 
-Smart Contracts and Solidity: 
+### Smart Contracts and Solidity: 
 
 Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. Smart Contracts represent a decentralized backend functionality that calls variables, methods and interacts with hosting platforms like the Pinata IPFS. They leverage technologies like tokenization, consensus mechanism and Ethereum wallets to provide financial transactions, distributed storage and much more. 
 
-Auctions and Dapp Auctions: 
+### Auctions and Dapp Auctions: 
 
 An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
 
