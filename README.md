@@ -31,7 +31,7 @@ Auctions and Dapp Auctions:
 
 An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
 
-To translate auctions to the spirit of opennes and decentralization that Blockchain empowered, Dapp Auctions brign together all of the aspects of auctions and Blockchan capabilities and features; based on the Ethereum network and using open sourced technical solutions, we tried to build an ambitious platform that allows both creators and investors to sell and invest in original NFT and artworks, all with Ether.
+To translate auctions into the spirit of openness and decentralization that Blockchain empowered, Dapp Auctions brign together all of the aspects of auctions and Blockchan capabilities and features; based on the Ethereum network and using open sourced technical solutions, we tried to build an ambitious platform that allows both creators and investors to sell and invest in original NFT and artworks, all with Ether.
 
 ## Project Tech Stack
 
