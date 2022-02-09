@@ -17,7 +17,7 @@ This project utilizes the blockchain and the idea of an non-fungible token to cr
 
 Ethereum and the Decentralized Apps:
 
-Ethereum is a 
+Ethereum is a blockchain platform, and as such is a shared, immutable ledger that simplifies recording transactions and tracking assets in a peer to peer network. In traditional apps the backend or database data is hosted on a server or static data structure like a server. An ethereum blockchain does store data, but utilizes a distributed system where each member node is not solely responsible for hosting the entire infrastructure. Blockchain technology is built specifically for recording transactions and would make it easier for companies to track things like auction purchases, Artwork ID numbers and utilizes tokens which assist in facilitating our project goals. 
 
 Smart Contracts and Solidity: 
 
