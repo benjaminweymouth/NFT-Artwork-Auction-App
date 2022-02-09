@@ -118,3 +118,9 @@ Once the installation steps are complete you can setup your blockchain and start
 
 ## Conclusions section 
 
+Blockchain technology is well-suited to Auctions because it is built specifically for recording transactions  like auction purchases, Artwork ID numbers and utilizes tokens which assisted in facilitating our project goals.
+
+Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm.
+
+Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Our team believes that Auctions, gaming and cryptocurrencies are just the beginning. 
+
