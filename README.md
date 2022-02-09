@@ -8,6 +8,11 @@ This project has two different solidity files for the back end / decentralized p
 
 ## Project Overview
 
+Art houses like OpenSea and other NFT sites can no longer be ignored both from a financial impact, the revolutionary nature of NFTs and the revenue that rivals traditional auction houses like Christies. 
+
+This project utilizes the blockchain and the idea of an non-fungible token to create a fresh new approach to auctioning off artwork. Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm. 
+
+
 ## Explain how this project relates to fintech.
 
 ## Usage and Installation Instructions
