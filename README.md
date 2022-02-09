@@ -35,29 +35,35 @@ At this stage you can register some artwork on the website. And it will be hoste
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
 ## Software Tools / Items to Install: 
+
+Please install all of these items and select the distribution that will work with your personal computing setup. 
+
 1) Remix IDE https://github.com/ethereum/remix-ide
 2) Ganache   https://trufflesuite.com/ganache/
 3) Metamask Chrome Extension https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
-4) Web Browser (Chrome)  https://www.google.ca/chrome/
+4) Chrome Web Browser  https://www.google.ca/chrome/
 5) VS Code IDE  https://code.visualstudio.com/
 6) Live Server (VS Code extension) https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 
 ## Steps to Setup the App: 
 
-1) install, open and setup a new quick start workspace in ganache. 
+Once the installation steps are complete you can setup your blockchain and start the app on the Live Server. Please follow the steps accordingly. 
+
+1) install Ganache, open and setup a new quick start workspace. set account as formal ganache workspace (not quickstart) 
 2) open metamask and connect metamask to ganache network 
-3) set metamask web injector
-4) set account as formal ganache workspace (not quickstart) 
-5) Set compiler to 0.5.5
-6) compile contracts. 
-7) set environment to injected web3. connect min 3 accounts
-8) set beneficiary account and click deploy
-9) set value to 1 ETH, enter bidder 1 address. click bid. 
-10) set value to 2 ETH, enter bidder 2 address. click bid. 
-11) end auction
-12) withdraw
-13) pending return: add senders (highest bidder) 
+3) open the solidity contracts in the Remix IDE. 
+4) Set compiler to 0.5.5. compile both contracts. 
+5) set metamask web injector in your remix IDE. 
+6) Select the Market contract and deploy it. 
+7) Select the Auction contract, insert an ethereum address and deploy it using the address.  
+8) set environment to injected web3. connect min 3 accounts in metamask. 
+9) set beneficiary account and click deploy
+10) set value to 1 ETH, enter bidder 1 address. click bid. 
+11) set value to 2 ETH, enter bidder 2 address. click bid. 
+12) end auction
+13) withdraw
+14) pending return: add senders (highest bidder) 
 
 
 ## Conclusions section 
