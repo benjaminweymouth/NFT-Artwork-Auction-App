@@ -18,10 +18,7 @@ This project utilizes the blockchain and the idea of an non-fungible token to cr
 
 ### PowerPoint / Slide Deck 
 
-
-
-
-[![Download SlideDeck Here]( )](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/SlideDeck/AuctionPIERSlidedeck.pptx?raw=true)
+[Download SlideDeck Here](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/SlideDeck/AuctionPIERSlidedeck.pptx?raw=true) 
 
 ## Relevance to Fintech 
 
