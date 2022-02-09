@@ -13,8 +13,19 @@ Art houses like OpenSea and other NFT sites can no longer be ignored both from a
 This project utilizes the blockchain and the idea of an non-fungible token to create a fresh new approach to auctioning off artwork. Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm. 
 
 
-## Explain how this project relates to fintech.
+## Relevance to Fintech 
 
+Ethereum and the Decentralized Apps:
+
+Ethereum is a 
+
+Smart Contracts and Solidity: 
+
+Auctions and Dapp Auctions: 
+
+An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
+
+Dapp Auctions are 
  
 
 ## Project Tech Stack
