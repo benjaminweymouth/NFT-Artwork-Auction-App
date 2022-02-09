@@ -66,7 +66,7 @@ At this stage you can register some artwork on the website. And it will be hoste
 
 ## Non-deployer Access: (Video) 
 
-This video shows the view for a non-deployer/non-admin . 
+The following video shows the frontend view for a non-deployer/non-admin. A bidder does not have access to end an auction or place a new bid. 
 
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/4.%20Non-deployer%20access.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
