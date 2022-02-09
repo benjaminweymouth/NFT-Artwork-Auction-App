@@ -25,13 +25,13 @@ Ethereum is a blockchain platform, and as such is a shared, immutable ledger tha
 
 Smart Contracts and Solidity: 
 
-Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. 
+Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. ...
 
 Auctions and Dapp Auctions: 
 
 An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
 
-Dapp Auctions are 
+Dapp Auctions are ...
  
 
 ## Project Tech Stack
@@ -63,6 +63,24 @@ Once you have VS Code "Live Server" extension installed, you can run the app on 
 At this stage you can register some artwork on the website. And it will be hosted on the Pinata IPFS system. 
 
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Non-deployer Access: (Video) 
+
+The following video shows the frontend view for a non-deployer/non-admin. A bidder does not have access to end an auction or place a new bid. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/4.%20Non-deployer%20access.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Placing a bid: (Video) 
+
+The following video depicts how a potential bidder can make and submit a bid. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/5.%20Placing%20a%20bid.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Auction End: (Video) 
+
+The auction owner can end the auction for any piece of artwork when the highest bid is placed. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/6.%20Ending%20an%20Auction.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
 ## Software Tools / Items to Install: 
 
