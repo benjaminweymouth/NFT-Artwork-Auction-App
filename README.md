@@ -25,13 +25,13 @@ Ethereum is a blockchain platform, and as such is a shared, immutable ledger tha
 
 Smart Contracts and Solidity: 
 
-Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. ...
+Solidity and Smart Contracts are currently emerging but will spread in both popularity and utility. Auctions, gaming and cryptocurrencies are just the beginning. Smart Contracts represent a decentralized backend functionality that calls variables, methods and interacts with hosting platforms like the Pinata IPFS. They leverage technologies like tokenization, consensus mechanism and Ethereum wallets to provide financial transactions, distributed storage and much more. 
 
 Auctions and Dapp Auctions: 
 
 An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
 
-To translate auctions to the spirit of openness and decentralization that Blockchain empowered, Dapp Auctions bring together all of the aspects of auctions and Blockchain capabilities and features; based on the Ethereum network and using open sourced technical solutions, we tried to build an ambitious platform that allows both creators and investors to sell and invest in original NFT and artwork, all paid for with Ether and directly from digital wallets.
+To translate auctions into the spirit of openness and decentralization that Blockchain empowered, Dapp Auctions brign together all of the aspects of auctions and Blockchan capabilities and features; based on the Ethereum network and using open sourced technical solutions, we tried to build an ambitious platform that allows both creators and investors to sell and invest in original NFT and artworks, all with Ether.
 
 ## Project Tech Stack
 
