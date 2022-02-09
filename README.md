@@ -10,6 +10,12 @@ This project has two different solidity files for the back end / decentralized p
 
 ## Explain how this project relates to fintech.
 
+## Usage and Installation Instructions
+
+This section outlines GIF vidoes and details a list of instructions and tools to setup the app. The main components such as a Ganache test net, a Remix IDE and a MetaMask wallet are all crucial components to setting up the app on your machine. Links are provided for installation guides for all of these components. 
+
+The next section will provide video instructions on the app. Following that a list of tools and step-by-step instructions are provided. 
+
 ## Compiling and Deploying the App: (Video) 
 
 This video shows the steps to compile and deploy the solidity contracts 
