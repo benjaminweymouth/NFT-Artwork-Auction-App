@@ -1,131 +1,98 @@
-## AuctionPIER: Dapp Auction, A Decentralized Auction Project 
-The purpose of this project is to create a decentralized auction in Solidity, using React for the Front End. 
+
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/frontend/images/AuctionPierLogo.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## AuctionPIER:  An Ethereum Dapp Auction 
+The purpose of this AuctionPIER project is to create a decentralized auction in Solidity, using HTML, JavaScript, CSS and Bootstrap for the Front End. 
 This project has two different solidity files for the back end / decentralized portion of the app. 
 
-## Steps: 
-
-1) open ganache. open metamask and connect metamask to ganache network 
-2) set metamask web injector
-3) set account as formal ganache workspace (not quickstart) 
-4) Set compiler to 0.5.5
-5) compile contracts. 
-6) set environment to injected web3. connect min 3 accounts
-7) set beneficiary account and click deploy
-8) set value to 1 ETH, enter bidder 1 address. click bid. 
-9) set value to 2 ETH, enter bidder 2 address. click bid. 
-10) end auction
-11) withdraw
-12) pending return: add senders (highest bidder) 
+### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
+-----------------------------
 
 
-# Deploying the MartianMarket
+## Project Overview
 
-In this activity, you will create a landing page and deploy the MartianMarket dApp to your Github Pages account.
+Our motivation is to build and develop a blockchain based Auction Artwork marketplace using the decentralized Ethereum platform. Art houses like OpenSea and other NFT sites can no longer be ignored both from a financial impact, the revolutionary nature of NFTs and the revenue that rivals traditional auction houses like Christies. 
 
-## Instructions
-
-* Create a fresh directory in your workspace called `martian_market`:
-
-  ```bash
-  mkdir martian_market
-  cd martian_market
-  ```
-
-* Move the frontend code from the `Resources/martian_market/frontend` folder into your `martian_market` folder. The path should be `YOUR_WORKSPACE/martian_market/frontend`.
-
-* In Remix, deploy a fresh `MartianMarket` contract.
-
-* Copy over the ABIs from `MartianMarket` and `MartianAuction` into separate `MartianMarket.json` and `MartianAuction.json` files inside the `frontend` folder. This is necessary for the frontend to talk to the contract backend.
-
-  * Replace the contents of the example ABIs with your own. Your contract was built using the same structure, so the example ABI should work anyway, but to be sure, provide your own. You **must** have used the same names of the public functions as the example [solution](Resources/martian_market/MartianMarket.sol), otherwise, neither will work.
-
-  * Make sure to copy over the correct ABIs for each contract. You will have to manually select `MartianMarket` contract from the compiler menu:
-
-  ![ABI Selection](Images/abi-selection.gif)
-
-* At the top of the `dapp.js` frontend code, set the `contractAddress` variable to equal your deployed contract.
-
-* Ensure you have pasted your contract's ABIs into their corresponding `json` files and updated the `contractAddress` variable before moving on.
-
-* Create a `README.md` inside the top-level `martian_market` folder.
-
-  * You can model the structure from the `Resources/martian_market` folder.
-
-* Within this `README.md` file, add some information explaining the application.
-
-  You **must** include a link to the dApp's `frontend` directory by linking to `frontend/index.html` at least once, otherwise, the point of the landing page is lost!
-
-  The syntax for a link in Markdown is `[Link Text Here](https://url_here)`. You can directly link to the `frontend/index.html` file with something like
-
-  ```markdown
-  [Frontend Code Link Text](frontend/index.html)
-  ```
-
-  For example:
-
-  ```markdown
-  # MartianMarket
-
-  ## Summary
-
-  This application is an online auction system for the Martian Land Foundation to auction available resources on Mars.
-
-  ### Demo App
-
-  Click [here](frontend/index.html) to launch the MartianMarket application.
-  ```
-
-* Take the time to explain how the application was built. Explain things like how the contracts work, what the purpose of the application is, and how to use it.
-
-  * Include codeblocks and even explain your raw code if you would like to present this to a future employer. Get creative!
-
-  * Use this [Markdown Syntax Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for quick reference on how to style various aspects of your text.
-
-* Once you've got a good summary going, create a new Github repository by navigating to [Github](https://github.com), clicking the `+` at the top right, and selecting `New Repository`.
-
-  * Give it a title and short description. Set it to public, and do not initialize with a `README`, since you have one already. Create the repository.
-
-* Run the first set of commands that Github provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file (since there is already content in there).
-
-  * Once you run this set of commands, you will need to upload the rest of the frontend code, since the first set only uploads the `README.md`. Make sure you are in the top level `martian_market` folder and run:
-
-    ```bash
-    git add -A
-    git commit -m "add frontend code"
-    git push
-    ```
-
-    * After running this, all of the code should be uploaded to the repository.
-
-* Navigate to the repo settings on Github by clicking the `Settings` tab, and scroll down to the `Github Pages` section, and set the `Source` to `master`.
-
-* Click the theme chooser, pick a theme, then navigate to the URL that Github Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
-
-* Once on the landing page, check out your beautiful work, then click on the link that you generated to take you to your dApp. Ensure MetaMask is pointed at the same network that you've deployed the contract to. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the contract data should populate.
-
-* This frontend works similarly to the `CryptoRight` frontend, but here's a breakdown:
-
-  * If you are using the same account in MetaMask as the `foundation_address` you deployed from, you should see some admin related UI elements.
-
-    * Use your Pinata API keys to upload images of Martian land and pair them with a name.
-
-    * Clicking `Register Land` should send a transaction to the `registerLand` function of the contract.
-
-    * Clicking `End Auction` on a token will end an auction (as long as it has a bid).
-
-  * If you switch accounts to another address in MetaMask, you will only be able to `bid` on tokens. Try bidding some Ether from one account, then finalizing the auction from the `foundation_address`. When you are outbid, you will be able to click the `Withdraw` button to withdraw from your `pendingReturns`.
-
-  * You will need to refresh the dApp once you receive the `Transaction Confirmed` notification from MetaMask, as this frontend is not as reactive.
-
-## Challenge
-
-* This landing page faces the world. Try to make this site as compelling as possible by capturing the exciting elements of your hard work!
-
-## Hints
-
-* In case you need some help with Markdown, use this [Markdown Syntax Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for quick reference on how to style various aspects of your text.
-
-* Github also provides a [Markdown Reference](https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax).
+This project utilizes the blockchain and the idea of an non-fungible token to create a fresh new approach to auctioning off artwork. Users who are part of the Ethereum community can utilize their ETH to bid on artwork and be part of an artistic and computing wave that is taking the world by storm. 
 
 
+## Relevance to Fintech 
+
+Ethereum and the Decentralized Apps:
+
+Ethereum is a blockchain platform, and as such is a shared, immutable ledger that simplifies recording transactions and tracking assets in a peer to peer network. In traditional apps the backend or database data is hosted on a server or static data structure like a server. An ethereum blockchain does store data, but utilizes a distributed system where each member node is not solely responsible for hosting the entire infrastructure. Blockchain technology is built specifically for recording transactions and would make it easier for companies to track things like auction purchases, Artwork ID numbers and utilizes tokens which assist in facilitating our project goals. 
+
+Smart Contracts and Solidity: 
+
+Auctions and Dapp Auctions: 
+
+An auction is a classic financial instrument, but the decentralized web allows for a new representation of an older concept. In the form of a blockchain, an auction can be spread amongst members of a network, in this case we utilize the Ethereum network. 
+
+Dapp Auctions are 
+ 
+
+## Project Tech Stack
+
+Our project tech stack includes CSS, JavaScript, HTML5, Git, VS Code, Ethereum, Solidity, Trello, MetaMask, Canva, Ganache, Remix IDE and Bootstrap. 
+
+<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" alt="CSS" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="HTML" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="150" height="150"/>  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original-wordmark.svg" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111055-2fb55ea2-2a7f-4403-9b29-b6e698098ce1.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111182-9364fabd-ea72-4f1f-a9e1-ea79505b2b09.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111306-45bb7f00-8db3-45bd-9091-1ac4042a3330.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111363-a70dc32a-c155-4ad4-97c4-c900f20c35c8.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111596-a780afb7-f00d-4ccd-b107-9e0a83ba4546.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111732-cd8d09ef-b024-4d25-8693-374c7fb6f1bd.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153111868-e87aa02f-da4c-4078-b40b-ad69f43e5f87.png" alt="Git" width="150" height="150"/> <img src="https://user-images.githubusercontent.com/47256041/153112236-58ee97e7-5cf8-4a27-ab3e-f99f73e075de.png" alt="Git" width="150" height="150"/> 
+
+## Usage and Installation Instructions
+
+This section outlines GIF vidoes and details a list of instructions and tools to setup the app. The main components such as a Ganache test net, a Remix IDE and a MetaMask wallet are all crucial components to setting up the app on your machine. Links are provided for installation guides for all of these components. 
+
+The next section will provide video instructions on the app. Following that a list of tools and step-by-step instructions are provided. 
+
+## Compiling and Deploying the App: (Video) 
+
+This video shows the steps to compile and deploy the solidity contracts 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/1.%20Compiling%20and%20Deployment.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Start the App in VS Code: (Video) 
+
+Once you have VS Code "Live Server" extension installed, you can run the app on your local machine. This video shows the steps required. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/2.%20Open%20Live%20Server.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Register New Artwork: (Video) 
+
+At this stage you can register some artwork on the website. And it will be hosted on the Pinata IPFS system. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+## Software Tools / Items to Install: 
+
+Please install all of these items and select the distribution that will work with your personal computing setup. 
+
+1) Remix IDE https://github.com/ethereum/remix-ide
+2) Ganache   https://trufflesuite.com/ganache/
+3) Metamask Chrome Extension https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en
+4) Chrome Web Browser  https://www.google.ca/chrome/
+5) VS Code IDE  https://code.visualstudio.com/
+6) Live Server (VS Code extension) https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+
+## Steps to Setup the App: 
+
+Once the installation steps are complete you can setup your blockchain and start the app on the Live Server. Please follow the steps accordingly. 
+
+1) install Ganache, open and setup a new quick start workspace. set account as formal ganache workspace (not quickstart) 
+2) open metamask and connect metamask to ganache network 
+3) open the solidity contracts in the Remix IDE. 
+4) Set compiler to 0.5.5. compile both contracts. 
+5) set metamask web injector in your remix IDE. 
+6) Select the Market contract and deploy it. 
+7) Select the Auction contract, insert an ethereum address and deploy it using the address.  
+8) set environment to injected web3. connect min 3 accounts in metamask. 
+9) set beneficiary account and click deploy
+10) set value to 1 ETH, enter bidder 1 address. click bid. 
+11) set value to 2 ETH, enter bidder 2 address. click bid. 
+12) end auction
+13) withdraw
+14) pending return: add senders (highest bidder) 
+
+
+## Conclusions section 
 
