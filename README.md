@@ -20,21 +20,31 @@ Once you have VS Code "Live Server" extension installed, you can run the app on 
 
 [![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/2.%20Open%20Live%20Server.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
 
+## Register New Artwork: (Video) 
+
+At this stage you can register some artwork on the website. And it will be hosted on the Pinata IPFS system. 
+
+[![AuctionPier](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project/blob/main/Videos/3.%20Register%20Artwork.gif)](https://github.com/benjaminweymouth/ETH-Dapp-Auction-Project)
+
+
+
+
 
 ## Steps to Setup the App: 
 
-1) open ganache. open metamask and connect metamask to ganache network 
-2) set metamask web injector
-3) set account as formal ganache workspace (not quickstart) 
-4) Set compiler to 0.5.5
-5) compile contracts. 
-6) set environment to injected web3. connect min 3 accounts
-7) set beneficiary account and click deploy
-8) set value to 1 ETH, enter bidder 1 address. click bid. 
-9) set value to 2 ETH, enter bidder 2 address. click bid. 
-10) end auction
-11) withdraw
-12) pending return: add senders (highest bidder) 
+1) install, open and setup a new quick start workspace in ganache. 
+2) open metamask and connect metamask to ganache network 
+3) set metamask web injector
+4) set account as formal ganache workspace (not quickstart) 
+5) Set compiler to 0.5.5
+6) compile contracts. 
+7) set environment to injected web3. connect min 3 accounts
+8) set beneficiary account and click deploy
+9) set value to 1 ETH, enter bidder 1 address. click bid. 
+10) set value to 2 ETH, enter bidder 2 address. click bid. 
+11) end auction
+12) withdraw
+13) pending return: add senders (highest bidder) 
 
 
 # Deploying the MartianMarket
