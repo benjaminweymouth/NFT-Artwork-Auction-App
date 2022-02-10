@@ -6,6 +6,10 @@
 
 ### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
 -----------------------------
+Live Deployed Link (Please follow steps to set up the app) 
+
+https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/#
+-----------------------------
 
 ## Project Overview
 
