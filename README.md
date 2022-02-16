@@ -6,7 +6,7 @@
 
 ### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
 -----------------------------
-Live Deployed Link (Please follow the readme for full functionality with your Ethereum wallet) 
+Live Deployed Link (Note: complete the readme file for local machine setup instructions) 
 
 https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
 -----------------------------
