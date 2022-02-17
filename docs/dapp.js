@@ -1,6 +1,6 @@
 // @TODO: Update this address to match your deployed ArtworkMarket contract!
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0x4bB23489E9e77fA383c2CCB91A386b19E090ff47";
+const contractAddress = "0xa6892393f9DAdcE0134fAE3B25f83953E6829d8b";
 
 
 const dApp = {
@@ -103,12 +103,12 @@ const dApp = {
         console.log('owner', owner) */
 
           $("#dapp-auc-details").append(
-            `    <div class="card blue darken- ">
-            <div class="card-content white-text ">
+            `    <div class="card  darken- ">
+            <div class="card-content black-text ">
           
            
 
-   <p class="card-header white-text bg-light text-dark mb-3 "> AUCTION DETAILS FOR:  ${token.name}</p>          
+   <p class="card-header black-text bg-light text-dark mb-3 "> AUCTION DETAILS FOR:  ${token.name}</p>          
   <table class="table ">
   <thead>
     <tr>
