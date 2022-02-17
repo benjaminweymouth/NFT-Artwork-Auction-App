@@ -108,7 +108,7 @@ const dApp = {
           
            
 
-   <p class="card-header black-text bg-light text-dark mb-3 "> AUCTION DETAILS FOR:  ${token.name}</p>          
+   <p class="card-header black-text bg-light text-dark mb-3 font-weight: bold;"> AUCTION DETAILS FOR:  ${token.name}</p>          
   <table class="table ">
   <thead>
     <tr>
