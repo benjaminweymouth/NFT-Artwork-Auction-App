@@ -135,7 +135,7 @@ const dApp = {
     </tr>
       <tr>
       <td> Image Pinata IPFS URI: 
-      <a class="white-text h1 small" style=font-size:8px, href="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} ">
+      <a class="black-text h1 small" style=font-size:8px, href="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} ">
             https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")} 
             </a>
       
