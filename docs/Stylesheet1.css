@@ -52,4 +52,8 @@ body {
     font-size: 42px;
      
   }
-  
+  .restrictimgsize
+  {
+    max-width: 450px;
+    max-height: 549px;
+  }

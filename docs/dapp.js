@@ -81,7 +81,7 @@ const dApp = {
           $("#dapp-tokens").append(
             `<div class="col m6">
               <div class="card cardsize">
-                <div class="card-image">
+                <div class="card-image restrictimgsize">
                   <img id="dapp-image" src="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")}">
                   <span id="dapp-name" class="card-title">${token.name}</span>
                 </div>
