@@ -10,7 +10,7 @@
 
 Note: complete the readme file for local machine setup instructions.
 
-https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
+## https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
 -----------------------------
 
 ## Project Overview
