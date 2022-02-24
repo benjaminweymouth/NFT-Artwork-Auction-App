@@ -6,11 +6,17 @@
 
 ### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
 -----------------------------
-### Live Deployed Link 
+### Live Link and Set-Up Instructions
 
 #### https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
 
-#### Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for Google Chrome to login to the site. (Or follow the full instructions in this readme) 
+#### Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for your preferred browser to access the site. (follow these steps) 
+
+1) Install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
+2) Within Metamask, create a wallet account
+3) Switch to the Ropsten Test Network
+4) Add 1 ETH (or more!) from a faucet such as https://faucet.metamask.io/
+5) visit the [AuctionPier site](https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/) and enjoy some friendly competitive bidding. 
 
 -----------------------------
 
