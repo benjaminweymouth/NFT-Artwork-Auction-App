@@ -8,7 +8,7 @@
 -----------------------------
 ### Live Deployed Link 
 
-Note: complete the readme file for local machine setup instructions.
+## Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for Google Chrome to login to the site. (Or follow the full instructions in this readme) 
 
 ## https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
 -----------------------------
