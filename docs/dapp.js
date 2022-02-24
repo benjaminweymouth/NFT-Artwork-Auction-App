@@ -1,6 +1,6 @@
 // @TODO: Update this address to match your deployed ArtworkMarket contract!
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0xCBbd95395dc49A83067e52505970c83edB2DAb49";
+const contractAddress = "0x9c7D6bf40FB5F8663F470AAeD4f3403806c8Db22";
 
 
 const dApp = {
@@ -30,6 +30,7 @@ const dApp = {
         console.log('token uri', token_uri)
         const token_json = await fetchMetadata(token_uri);
         console.log('token json', token_json)
+        console.log('token id', token_id)
         this.tokens.push({
           tokenId: i,
           highestBid: Number(await this.artContract.methods.highestBid(i).call()),
