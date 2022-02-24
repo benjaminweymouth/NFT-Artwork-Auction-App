@@ -5,6 +5,7 @@
 ## AuctionPIER:  An Ethereum Dapp Auction 
 
 ### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
+
 -----------------------------
 ### Live Link and Set-Up Instructions
 
