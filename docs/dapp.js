@@ -66,7 +66,7 @@ const dApp = {
     this.tokens.forEach((token) => {
       try {
         let endAuction = `<a token-id="${token.tokenId}" class="dapp-admin btn btn-info" style="display:none;" href="#" onclick="dApp.endAuction(event)">End Auction</a>`;
-        let highestBidder = `: ${token.owner}`;
+        let highestBidder = ` ${token.owner}`;
         let highestBid = `  ${token.highestBid}`;
         let auctionStatus = `   ${token.auctionEnded}`;
         
@@ -253,6 +253,12 @@ const dApp = {
     // Initialize web3
     if (!this.ethEnabled()) {
       alert("Please install MetaMask to use this dApp!");
+      $(".dapp-metamasklink").show();
+
+      
+    }
+    else {
+      $(".dapp-metamasklink").hide();
     }
 
     this.accounts = await window.web3.eth.getAccounts();
