@@ -6,9 +6,6 @@
 
 ### Project team members: Benjamin Weymouth, Mohamed Berrachdi, Sadia Akbar ###
 
-<a href="https://www.linkedin.com/in/mohamed-berrachdi/" class="fa fa-linkedin   ">  </a>   
-<a href="https://www.linkedin.com/in/sadiaparvinakbar/" class="fa fa-linkedin   "></a>  
-<a href="https://www.linkedin.com/in/benjaminweymouth/" class="fa fa-linkedin   "></a>  
 -----------------------------
 ### Live Link and Set-Up Instructions
 
