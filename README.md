@@ -10,7 +10,7 @@
 
 #### https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/
 
-#### Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for Google Chrome to login to the site. (Or follow the full instructions in this readme) 
+#### Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for your preferred browser to access the site. (follow these steps) 
 
 1) Install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 2) Within Metamask, create a wallet account
