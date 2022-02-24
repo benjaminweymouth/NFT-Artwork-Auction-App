@@ -15,7 +15,7 @@
 1) Install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en)
 2) Within Metamask, create a wallet account
 3) Switch to the Ropsten Test Network
-4) Load up your account with testnet Ether from a faucet such as https://faucet.metamask.io/
+4) Add 1 ETH (or more!) from a faucet such as https://faucet.metamask.io/
 5) visit the [AuctionPier site](https://benjaminweymouth.github.io/NFT-Artwork-Auction-App/) and enjoy some friendly competitive bidding. 
 
 -----------------------------
