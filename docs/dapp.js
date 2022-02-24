@@ -30,7 +30,7 @@ const dApp = {
         console.log('token uri', token_uri)
         const token_json = await fetchMetadata(token_uri);
         console.log('token json', token_json)
-        console.log('token id', token_id)
+         
         this.tokens.push({
           tokenId: i,
           highestBid: Number(await this.artContract.methods.highestBid(i).call()),
