@@ -12,6 +12,11 @@
 
 #### Note: install the [metamask extension](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en) for Google Chrome to login to the site. (Or follow the full instructions in this readme) 
 
+1) Install the MetaMask Extension
+2) Create a wallet account
+3) Load up your account with testnet Ether from a faucet such as https://faucet.metamask.io/
+4) visit the site and enjoy some friendly competitive bidding. 
+
 -----------------------------
 
 ## Project Overview
