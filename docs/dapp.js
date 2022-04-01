@@ -1,10 +1,14 @@
-// @TODO: Update this address to match your deployed ArtworkMarket contract on Remix
+// JAVASCRIPT file for AuctionPier 
+
+// Update this address to match your deployed ArtworkMarket contract on Remix
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
 const contractAddress = "0x40ee120279d793c6BbD80De2Ed833108B5d974B8";
 
 const dApp = {
+
+  // function to check if the browser has an Ethereum provider (MetaMask) installed
   ethEnabled: function() {
-    // If the browser has an Ethereum provider (MetaMask) installed
+    
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum);
       window.ethereum.enable();
@@ -13,15 +17,17 @@ const dApp = {
     return false;
   },
 
-  //async function enable asynchronous, promise-based behavior to be written in a cleaner style
+  // async function enable asynchronous, promise-based behavior
   collectVars: async function() {
-    // get land tokens
+    // solidity generates tokens and we can call them here
     this.tokens = [];
     this.totalSupply = await this.artContract.methods.totalSupply().call();
 
     // fetch json metadata from IPFS (name, description, image, etc)
     const fetchMetadata = (reference_uri) => fetch(`https://gateway.pinata.cloud/ipfs/${reference_uri.replace("ipfs://", "")}`, { mode: "cors" }).then((resp) => resp.json());
 
+
+    // each token is associated with a URI
     for (let i = 1; i <= this.totalSupply; i++) {
       try {
         const token_uri = await this.artContract.methods.tokenURI(i).call();
@@ -79,11 +85,11 @@ const dApp = {
         let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
 
           $("#dapp-tokens").append(
-            `<div class="col m6">
-              <div class="card cardsize">
-                <div class="card-image restrictimgsize">
+            `<div class="col m6 centerAllitems">
+              <div class="card cardsize centerAllitems">
+                <div class="card-image restrictimgsize centerAllitems">
                   <img id="dapp-image" src="https://gateway.pinata.cloud/ipfs/${token.image.replace("ipfs://", "")}">
-                  <span id="dapp-name" class="card-title">${token.name}</span>
+                  <span id="dapp-name" class="card-title centerAllitems">${token.name}</span>
                 </div>
                 <div class="card-action">
                 <h6> Bid: </h6>
@@ -96,11 +102,7 @@ const dApp = {
               </div>
             </div>`
           );
-          // console.log('i one per image', i)
-    /*     console.log('highestBidder', highestBidder)
-        console.log('highestBid', highestBid)
-        console.log('auctionStatus', auctionStatus)
-        console.log('owner', owner) */
+    
 
           $("#dapp-auc-details").append(
             `    <div class="card  darken- ">
