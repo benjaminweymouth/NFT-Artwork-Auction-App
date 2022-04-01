@@ -1,4 +1,4 @@
-// @TODO: Update this address to match your deployed ArtworkMarket contract!
+// @TODO: Update this address to match your deployed ArtworkMarket contract on Remix
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
 const contractAddress = "0x5380cc8Eb5D2e97A8F145C30957c02b9D626e34C";
 
