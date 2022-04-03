@@ -2,7 +2,7 @@
 
 // Update this address to match your deployed ArtworkMarket contract on Remix
 // const contractAddress = "0x7a377fAd8c7dB341e662c93A79d0B0319DD3DaE8";
-const contractAddress = "0x40ee120279d793c6BbD80De2Ed833108B5d974B8";
+const contractAddress = "0xe19Aa5272e23c304943B9690c6a173F8eC1FAfd2";
 
 const dApp = {
 
